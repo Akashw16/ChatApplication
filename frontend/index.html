@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="loginSection">
+            <div class="login-box">
+                <h2>Welcome to Chat</h2>
+                <input type="text" id="usernameInput" placeholder="Enter username">
+                <button id="loginBtn">Join Chat</button>
+            </div>
+        </div>
+
+        <div id="chatSection" class="hidden">
+            <div class="rooms-panel">
+                <h3>Chat Rooms</h3>
+                <div id="roomList"></div>
+                <div class="create-room">
+                    <input type="text" id="newRoomInput" placeholder="New room name">
+                    <button id="createRoomBtn">Create Room</button>
+                </div>
+            </div>
+
+            <div class="chat-panel">
+                <div class="chat-header">
+                    <h3 id="currentRoom">Global Room</h3>
+                    <span id="userCount">Users: 0</span>
+                </div>
+                <div id="messageContainer"></div>
+                <div class="message-input">
+                    <input type="text" id="messageInput" placeholder="Type a message...">
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chat-ui.js"></script>
+</body>
+</html>
